@@ -1,0 +1,26 @@
+.login-container p {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-bottom: -15px;
+}
+
+.login-container p span {
+  color: rgb(0, 140, 255);
+}
+
+.login-container .or {
+  margin-bottom: 0;
+}
+.icon {
+  padding-right: 5px;
+}
+
+.form {
+  margin-top: 40px;
+  padding: 40px;
+  border: 1px solid grey;
+}
+
+.list {
+  font-weight: bold;
+}

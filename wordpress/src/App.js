@@ -1,11 +1,9 @@
-import './App.css';
+import "./App.css";
+import Login from "./components/login/Login";
 
 const App = () => {
-  return(
-    <div>Hello from client</div>
-  )
-}
+  return <div>
+    <Login/>
+  </div>;
+};
 export default App;
-
-
-
