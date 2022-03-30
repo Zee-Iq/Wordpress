@@ -18,10 +18,10 @@ import AppleIcon from '@mui/icons-material/Apple';
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
+      {'Contributors © '}
+      <Link color="inherit" href="https://github.com/Zee-Iq/Wordpress-clone/">
+        Zeeshan Iqbal, Christopher Armstrong, Igor Mahold, Victor Ajagunna
+      </Link>{' '}DCI,
       {new Date().getFullYear()}
       {'.'}
     </Typography>
