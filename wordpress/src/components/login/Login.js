@@ -15,22 +15,13 @@ import List from "@mui/material/List";
 import ListItemText from "@mui/material/ListItemText";
 import Divider from "@mui/material/Divider";
 
-
-
-
-
 import "./login.css";
-
-
-
 
 const style = {
   textAlign: "center",
   width: "100%",
   maxWidth: 360,
   mt: 5,
-
-  
 };
 
 const theme = createTheme();
@@ -101,8 +92,8 @@ export default function Login() {
                 type="submit"
                 fullWidth
                 variant="contained"
-                style={{backgroundColor: '#ef5350'}}
-                sx={{ mt: 3, mb: 2,  }}
+                style={{ backgroundColor: "#ef5350" }}
+                sx={{ mt: 3, mb: 2 }}
               >
                 Continue
               </Button>
@@ -141,13 +132,13 @@ export default function Login() {
               component="nav"
               aria-label="mailbox folders"
             >
-              <ListItemText  primary="Create a new account" />
+              <ListItemText primary="Create a new account" />
               <Divider />
               <ListItemText primary="Lost your password" />
               <Divider />
               {/* <ListItem>
               <ArrowBackIcon/> */}
-              <ListItemText primary="Back to WordPress.com"/>
+              <ListItemText primary="Back to WordPress.com" />
               {/* </ListItem> */}
             </List>
           </Box>
