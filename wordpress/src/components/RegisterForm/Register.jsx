@@ -4,8 +4,8 @@ import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
-// import Checkbox from '@mui/material/Checkbox';
-import Link from '@mui/material/Link';
+import Checkbox from '@mui/material/Checkbox';
+
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
@@ -15,11 +15,13 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import GoogleIcon from '@mui/icons-material/Google';
 import AppleIcon from '@mui/icons-material/Apple';
 
-function Copyright(props) {
+import { Link }from 'react-router-dom';
+
+function Contributors(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Contributors © '}
-      <Link color="inherit" href="https://github.com/Zee-Iq/Wordpress-clone/">
+      <Link to="https://github.com/Zee-Iq/Wordpress-clone/">
         Zeeshan Iqbal, Christopher Armstrong, Igor Mahold, Victor Ajagunna
       </Link>{' '}DCI,
       {new Date().getFullYear()}
@@ -30,7 +32,7 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-export default function Register() {
+export default function SignUp() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -57,14 +59,7 @@ export default function Register() {
           </Avatar>
           <Typography component="h1" variant="h5">
             Sign up
-          </Typography>  =======
-          
-          <Box sx={{ 
-              marginTop: '8',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              }}>
+          </Typography>
           <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6}>
@@ -109,7 +104,12 @@ export default function Register() {
                   autoComplete="new-password"
                 />
               </Grid>
-              <p>By creating an account, you agree to our Terms of Service</p>
+              <Grid item xs={12}>
+                <FormControlLabel
+                  control={<Checkbox value="allowExtraEmails" color="primary" />}
+                  label="By creating an account, you agree to our Terms of Service."
+                />
+              </Grid>
             </Grid>
             <Button
               type="submit"
@@ -117,44 +117,42 @@ export default function Register() {
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
-              CREATE AN ACCOUNT
+              Sign Up
             </Button>
-            <Grid container justifyContent="flex-end">
+            <Grid container justifyContent="center">
               <Grid item>
-                <Link href="#" variant="body2">
-                  Already have an account? Sign in
-                </Link>
+              
+                <Link to='/login'
+                    style={{textDecoration: "none"}} 
+                > Already have an account? Sign in</Link>
+
               </Grid>
             </Grid>
           </Box>
         </Box>
-                {/* <div></div> */} ===| 
-
-                ======
         <Box>
-
-            <Button
-              type="submit"
-              fullWidth
-              variant="outlined"
-              startIcon={<GoogleIcon />}
-              sx={{ mt: 3, color: 'error.main', mb: 2 }}
-            >
-              Continue with Google
-            </Button>
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-            //   color="dark"
-              startIcon={<AppleIcon />}
-              sx={{ mt: 3, mb: 2, bgcolor: 'text.primary'}}
-            >
-              CONTINUE WITH APPLE
-            </Button>
-        </Box>
-        </Box>
-        <Copyright sx={{ mt: 5 }} />
+          <Button
+            type="submit"
+            fullWidth
+            variant="outlined"
+            startIcon={<GoogleIcon />}
+            sx={{ mt: 3, color: 'error.main', mb: 2 }}
+          >
+            Continue with Google
+          </Button>
+          <Button
+            type="submit"
+            fullWidth
+            variant="contained"
+          //   color="dark"
+            startIcon={<AppleIcon />}
+            sx={{ mt: 3, mb: 2, bgcolor: 'text.primary'}}
+          >
+            CONTINUE WITH APPLE
+          </Button>
+          </Box>
+          {/* </Box> */}
+        <Contributors sx={{ mt: 5 }} />
       </Container>
     </ThemeProvider>
   );
