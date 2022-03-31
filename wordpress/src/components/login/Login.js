@@ -16,6 +16,7 @@ import ListItemText from "@mui/material/ListItemText";
 import Divider from "@mui/material/Divider";
 
 import "./login.css";
+import { Link } from "react-router-dom";
 
 const style = {
   textAlign: "center",
@@ -132,13 +133,20 @@ export default function Login() {
               component="nav"
               aria-label="mailbox folders"
             >
+              <Link className="link" to='/register'>
               <ListItemText primary="Create a new account" />
+              </Link>
               <Divider />
+              <Link className="link" to='/forgotpassword'>
               <ListItemText primary="Lost your password" />
+              </Link>
               <Divider />
+              <Link className="link" to="/">
+              <ListItemText primary="Back to WordPress.com" />
+              </Link>
               {/* <ListItem>
               <ArrowBackIcon/> */}
-              <ListItemText primary="Back to WordPress.com" />
+              {/* <ListItemText primary="Back to WordPress.com" /> */}
               {/* </ListItem> */}
             </List>
           </Box>

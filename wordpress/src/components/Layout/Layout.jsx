@@ -1,15 +1,14 @@
-import React from 'react'
-import { Header } from '../Header/Header'
-import Login from '../login/Login'
-import Register from '../RegisterForm/Register'
+import React from "react";
 
+import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
 
 export const Layout = () => {
   return (
-      <>
-    <Header />
-    <Register />
-    
-    </>
-  )
-}
+    <div>
+      <Navbar />
+      <Footer />
+ 
+    </div>
+  );
+};
