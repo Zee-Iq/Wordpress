@@ -3,7 +3,7 @@ import React from "react";
 import { Layout } from "./components/Layout/Layout";
 import Login from "./components/login/Login";
 import Register from "./components/RegisterForm/Register";
-import Sidebar from "../src/components/Sidebar";
+import Sidebar from "./components/Sidebar/Sidebar";
 import FAQ from "../src/components/FAQ";
 
 export const Routes = () => {
