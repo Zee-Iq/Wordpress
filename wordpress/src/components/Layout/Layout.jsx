@@ -1,16 +1,14 @@
 import React from "react";
-import { Header } from "../Header/Header";
-import Login from "../login/Login";
-import Sidebar from "../Sidebar/Sidebar";
-import FAQ from "../FAQ";
+
+import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
 
 export const Layout = () => {
   return (
-    <>
-      <Header />
-
-      <Sidebar />
-      <FAQ />
-    </>
+    <div>
+      <Navbar />
+      <Footer />
+ 
+    </div>
   );
 };
