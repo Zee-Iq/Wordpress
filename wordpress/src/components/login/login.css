@@ -24,3 +24,10 @@
 .list {
   font-weight: bold;
 }
+
+
+
+.link {
+  color: black;
+  text-decoration: none;
+}
