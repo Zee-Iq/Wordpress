@@ -16,17 +16,20 @@ export default function FAQ() {
 
   return (
     <div>
+      <div className='accordion'>
       
-      <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+      <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}
+        backgroundColor="green">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1bh-content"
           id="panel1bh-header"
+      
         >
           <Typography sx={{ width: '33%', flexShrink: 0 }}>
-            Our Goal
+          <h3> Our Goal</h3> 
           </Typography>
-          <Typography sx={{ color: 'text.secondary' }}> About our App
+          <Typography sx={{ color: 'text.secondary' }}> <h3> About our App</h3> 
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -41,10 +44,11 @@ export default function FAQ() {
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2bh-content"
           id="panel2bh-header"
+          backgroundColor="green"
         >
-          <Typography sx={{ width: '33%', flexShrink: 0 }}>Getting Started</Typography>
+          <Typography sx={{ width: '33%', flexShrink: 0 }}><h3> Getting Started</h3></Typography>
           <Typography sx={{ color: 'text.secondary' }}>
-            How to utilize the full App features
+          <h3> How to gain full access to the App's features</h3>
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -62,7 +66,7 @@ export default function FAQ() {
           id="panel3bh-header"
         >
           <Typography sx={{ width: '33%', flexShrink: 0 }}>
-            Advanced settings
+          <h3> Advanced settings</h3> 
           </Typography>
           <Typography sx={{ color: 'text.secondary' }}>
             Filtering has been entirely disabled for whole web server
@@ -90,6 +94,7 @@ export default function FAQ() {
           </Typography>
         </AccordionDetails>
       </Accordion>
+      </div>
     </div>
   );
 }
