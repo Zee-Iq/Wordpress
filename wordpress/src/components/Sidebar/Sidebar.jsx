@@ -63,7 +63,7 @@ function ResponsiveDrawer(props) {
               <ListItemText primary="FAQ" />
             </ListItem>
           
-          )
+          
         </List>
       </Box>
     </div>
