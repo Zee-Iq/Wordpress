@@ -1,14 +1,16 @@
 import './Home.css';
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
+
 // import Sidebar from '..Sidebar/Sidebar';
 import Button from '@mui/material/Button';
+import { Avatar } from '@mui/material';
 
 export default function Home() {
   return (
     <div className='homeContainer'>
-      <Navbar />
+     
       {/* <Sidebar /> */}
+     
         <div className='overlay'>
           <div className='homeText'>
             {/* <h1>iBelieve</h1> */}

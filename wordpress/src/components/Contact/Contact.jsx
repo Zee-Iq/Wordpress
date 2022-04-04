@@ -3,16 +3,13 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
-// import FormControlLabel from '@mui/material/FormControlLabel';
-// import Checkbox from '@mui/material/Checkbox';
-// import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Navbar from '../Navbar/Navbar';
+
 
 
 const theme = createTheme();
@@ -29,7 +26,7 @@ export default function SignUp() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Navbar />
+     
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box
@@ -87,7 +84,6 @@ export default function SignUp() {
                   label="Message"
                   type="message"
                   id="message"
-                //   autoComplete="new-password"
                 />
               </Grid>
             
@@ -103,11 +99,7 @@ export default function SignUp() {
             <Grid container justifyContent="flex-start">
                 We would love to hear from you! Send your comments,
                 report a vulnerability, a bug or to request a feature.
-              {/* <Grid item>
-                <Link href="#" variant="body2">
-                  Already have an account? Sign in
-                </Link>
-              </Grid> */}
+            
             </Grid>
           </Box>
         </Box>

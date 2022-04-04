@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.homeContainer {
+/* .homeContainer {
     /* background: #9EFFF5;
     background: -webkit-radial-gradient(circle farthest-corner at center center, #9EFFF5 0%, #0CBABA 100%);
     background: -moz-radial-gradient(circle farthest-corner at center center, #9EFFF5 0%, #0CBABA 100%);
@@ -12,8 +12,8 @@
     width: 100vw;
     position: relative;
     background-size: cover;
-    background-position: 50% 50%; */
-}
+    background-position: 50% 50%; 
+} */
 
 .overlay {
     position: absolute;

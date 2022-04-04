@@ -4,6 +4,8 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import './FAQ.css'
+
 
 export default function FAQ() {
   const [expanded, setExpanded] = React.useState(false);
@@ -14,6 +16,7 @@ export default function FAQ() {
 
   return (
     <div>
+      
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -23,14 +26,13 @@ export default function FAQ() {
           <Typography sx={{ width: '33%', flexShrink: 0 }}>
             Our Goal
           </Typography>
-          <Typography sx={{ color: 'text.secondary' }}>This Blog API is a   
-            student project presented as part of our learning output at DCI Web design program. We believe great software should work with minimum set up, so you can focus on sharing our story, productions and freely, our abilities. It is simple and predictable so the user can easily get started. It also offers powerful features for growth and successful learning.
+          <Typography sx={{ color: 'text.secondary' }}> About our App
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-            Aliquam eget maximus est, id dignissim quam.
+          This Blog API is a   
+            student project presented as part of our learning output at DCI Web design program. We believe great software should work with minimum set up, so you can focus on sharing our story, productions and freely, our abilities. It is simple and predictable so the user can easily get started. It also offers powerful features for growth and successful learning.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -40,9 +42,9 @@ export default function FAQ() {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography sx={{ width: '33%', flexShrink: 0 }}>Users</Typography>
+          <Typography sx={{ width: '33%', flexShrink: 0 }}>Getting Started</Typography>
           <Typography sx={{ color: 'text.secondary' }}>
-            You are currently not an owner
+            How to utilize the full App features
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
