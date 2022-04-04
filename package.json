@@ -1,8 +1,17 @@
-"scripts"{
-  "test": "echo \"Error: no test specified\" && exit 1",  
-}
-
 {
+  "name": "wordpress-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix wordpress",
+    "admin": "npm start --prefix admin",
+    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run admin\" "
+  },
+  "author": "",
   "dependencies": {
     "axios": "^0.26.1",
     "bcrypt": "^5.0.1",
