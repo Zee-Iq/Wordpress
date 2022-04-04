@@ -1,4 +1,7 @@
-const express = require('express');
+const express = require("express");
 const app = express();
+app.get("/greeting", (req, res) => {
+  res.json({ greeting: "Hello from /greeting" });
+});
 
-app.listen(5000, () => console.log('Server started on port 5000')
+app.listen(5000, () => console.log("App running at port 5000"));
