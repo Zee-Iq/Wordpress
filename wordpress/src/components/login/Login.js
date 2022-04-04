@@ -18,6 +18,7 @@ import Divider from "@mui/material/Divider";
 import "./login.css";
 import { Link } from "react-router-dom";
 
+
 const style = {
   textAlign: "center",
   width: "100%",
