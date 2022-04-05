@@ -4,9 +4,9 @@ import Login from "./components/login/Login";
 import Register from "./components/RegisterForm/Register";
 import Home from "./components/Home/Home";
 import Contact from './components/Contact/Contact';
-import FAQ from './components/FAQ/Faq';
+import Faq from './components/FAQ/Faq';
 import Sidebar from "./components/Sidebar/Sidebar";
-import FAQ from "../src/components/FAQ";
+
 import MyProfile from "./components/Myprofile/MyProfile";
 
 export const Routes = () => {
@@ -14,10 +14,10 @@ export const Routes = () => {
     <Route path='/login' exact component={Login} />
     <Route path='/register' exact component={Register} />
     <Route path='/sidebar' exact component={Sidebar} />
-    <Route path='/faq' exact component={FAQ} />
+    <Route path='/faq' exact component={Faq} />
     <Route path='/myprofile' exact component={MyProfile}/>
-    
-
+    <Route path='/home' exact component={Home}/>
+    <Route path='/contact' exact component={Contact}/>
   </Switch>;
 };
 
