@@ -6,7 +6,6 @@ import Home from "./components/Home/Home";
 import Contact from './components/Contact/Contact';
 import FAQ from './components/FAQ/Faq';
 import Sidebar from "./components/Sidebar/Sidebar";
-import FAQ from "../src/components/FAQ";
 import MyProfile from "./components/Myprofile/MyProfile";
 import Editprofile from "./components/Editprofile/Editprofile";
 
