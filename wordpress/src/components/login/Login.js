@@ -14,6 +14,7 @@ import AppleIcon from "@mui/icons-material/Apple";
 import List from "@mui/material/List";
 import ListItemText from "@mui/material/ListItemText";
 import Divider from "@mui/material/Divider";
+import NavLogReg from "../Navbar/NavLogReg";
 
 import "./login.css";
 import { Link } from "react-router-dom";
@@ -40,15 +41,14 @@ export default function Login() {
 
   return (
     <div className="login-container">
-      {/* <Typography component="h1" variant="h5">
-              Log in to your account
-            </Typography> */}
+      {/* <NavLogReg /> */}
+
       <ThemeProvider theme={theme}>
         <Container className="form" component="main" maxWidth="xs">
           <CssBaseline />
           <Box
             sx={{
-              marginTop: 4,
+              marginTop: 8,
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
@@ -134,21 +134,17 @@ export default function Login() {
               component="nav"
               aria-label="mailbox folders"
             >
-              <Link className="link" to='/register'>
-              <ListItemText primary="Create a new account" />
+              <Link className="link" to="/register">
+                <ListItemText primary="Create a new account" />
               </Link>
               <Divider />
-              <Link className="link" to='/forgotpassword'>
-              <ListItemText primary="Lost your password" />
+              <Link className="link" to="/forgotpassword">
+                <ListItemText primary="Lost your password" />
               </Link>
               <Divider />
               <Link className="link" to="/">
-              <ListItemText primary="Back to WordPress.com" />
+                <ListItemText primary="Back to WordPress.com" />
               </Link>
-              {/* <ListItem>
-              <ArrowBackIcon/> */}
-              {/* <ListItemText primary="Back to WordPress.com" /> */}
-              {/* </ListItem> */}
             </List>
           </Box>
         </Container>
