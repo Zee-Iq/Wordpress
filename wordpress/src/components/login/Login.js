@@ -19,6 +19,7 @@ import NavLogReg from "../Navbar/NavLogReg";
 import "./login.css";
 import { Link } from "react-router-dom";
 
+
 const style = {
   textAlign: "center",
   width: "100%",
