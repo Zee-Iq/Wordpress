@@ -1,6 +1,7 @@
 import Button from "@mui/material/Button";
 import React from "react";
 import "./myprofile.css";
+import {Link} from "react-router-dom"
 
 export default function MyProfile() {
   return (
@@ -10,7 +11,10 @@ export default function MyProfile() {
         <h3>Name</h3>
         <p>Some text</p>
         <p>some other text</p>
-        <Button className="button" variant="contained">Edit Profile</Button>
+        <Link to='editprofile' style={{
+          textDecoration: "none"
+        }}> <Button className="button" variant="contained">Edit Profile</Button></Link>
+       
       </div>
     </div>
   );
