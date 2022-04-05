@@ -101,13 +101,11 @@ export default function Navbar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      
-      <Link to='/dashboard'><MenuItem onClick={handleMenuClose}>Dashboard</MenuItem></Link>
-      <Link to='/createpost'><MenuItem onClick={handleMenuClose}>Create Post</MenuItem></Link>
-      <Link to="/readinglist"><MenuItem onClick={handleMenuClose}>Reading List</MenuItem></Link>
-      <Link to="/myprofile"><MenuItem onClick={handleMenuClose}>My Profile</MenuItem></Link>
-      <Link to="/"><MenuItem onClick={handleMenuClose}>Log out</MenuItem></Link>
-      
+      <MenuItem onClick={handleMenuClose}>Dashboard</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Create Post</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Reading List</MenuItem>
+      <MenuItem onClick={handleMenuClose}>My Profile</MenuItem>
+      <MenuItem onClick={handleMenuClose}>Log out</MenuItem>
     </Menu>
   );
 

@@ -17,7 +17,7 @@ export default function Footer() {
         }}
         bgcolor="text.secondary"
         color="white"
-        position="fixed"
+        position="absolute"
         bottom="0px"
         width="100%"
         height="5rem"
