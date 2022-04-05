@@ -14,6 +14,7 @@ export const Routes = () => {
     <Route path='/register' exact component={Register} />
     <Route path='/sidebar' exact component={Sidebar} />
     <Route path='/faq' exact component={FAQ} />
+    <Route path='/readinglist' exact component={ReadingList} />
     
 
   </Switch>;

@@ -10,4 +10,4 @@ const Testapp = () => {
   )
 }
 
-export default Testapp
+export default Testapp;
