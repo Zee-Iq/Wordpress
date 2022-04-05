@@ -16,7 +16,7 @@ export const Routes = () => {
     <Route path='/home' exact component={Home} />
     <Route path='/contact' exact component={Contact} />
     <Route path='/FAQ' exact component={FAQ} />
-
+{/* contact */}
   </Switch>;
 };
 
