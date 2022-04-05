@@ -1,13 +1,17 @@
+import Testapp from "../src/components/Testapp"
+import AdminSidebar from '../src/components/AdminSidebar/AdminSidebar'
 
-import './App.css';
-import Sidebaradmin from './components/Sidebaradmin'
+
 
 
 function App() {
   return (
     <div className="App">
       
-      <Sidebaradmin />
+      <AdminSidebar />
+      <Testapp />
+
+     
       
     </div>
   );
