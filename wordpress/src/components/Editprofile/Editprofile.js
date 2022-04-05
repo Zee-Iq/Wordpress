@@ -1,8 +1,7 @@
 import React from "react";
 import Button from "@mui/material/Button";
 import { Grid, TextField, Typography } from "@mui/material";
-import Avatar from '@mui/material/Avatar';
-import "../Myprofile/myprofile.css";
+import Avatar from "@mui/material/Avatar";
 import "./edit.css";
 
 export default function Editprofile() {
@@ -28,19 +27,16 @@ export default function Editprofile() {
             </Grid>
 
             <Grid>
-            <Typography color="textPrimary" variant="h6">
+              <Typography color="textPrimary" variant="h6">
                 Profile image
               </Typography>
               <Avatar
-  alt="Remy Sharp"
-  src="/static/images/avatar/1.jpg"
-  sx={{ width: 56, height: 56 }}
-/>
-
-
+                alt="Remy Sharp"
+                src="/static/images/avatar/1.jpg"
+                sx={{ width: 56, height: 56 }}
+              />
             </Grid>
 
-         
             {/* <Grid xs={12} >
                     <Typography color='textPrimary' variant='h6' >Name</Typography>
                     <TextField variant='outlined' fullWidth />

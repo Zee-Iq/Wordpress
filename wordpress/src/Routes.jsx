@@ -5,6 +5,7 @@ import Register from "./components/RegisterForm/Register";
 import Sidebar from "./components/Sidebar/Sidebar";
 import FAQ from "../src/components/FAQ";
 import MyProfile from "./components/Myprofile/MyProfile";
+import Editprofile from "./components/Editprofile/Editprofile";
 
 export const Routes = () => {
   return <Switch>
@@ -13,6 +14,7 @@ export const Routes = () => {
     <Route path='/sidebar' exact component={Sidebar} />
     <Route path='/faq' exact component={FAQ} />
     <Route path='/myprofile' exact component={MyProfile}/>
+    <Route path='/editprofile' exact component={Editprofile} />
     
 
   </Switch>;
