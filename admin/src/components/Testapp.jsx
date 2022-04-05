@@ -2,9 +2,10 @@ import React from 'react'
 
 
 const Testapp = () => {
+  
   return (
     <div>
-        <p>Test App</p>
+        <p style={{textAlign: "center"}}>Test App</p>
       
     </div>
   )
