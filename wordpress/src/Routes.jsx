@@ -6,7 +6,6 @@ import Home from "./components/Home/Home";
 import Contact from './components/Contact/Contact';
 import FAQ from './components/FAQ/Faq';
 import Sidebar from "./components/Sidebar/Sidebar";
-import FAQ from "../src/components/FAQ";
 import MyProfile from "./components/Myprofile/MyProfile";
 
 export const Routes = () => {
@@ -15,11 +14,7 @@ export const Routes = () => {
     <Route path='/register' exact component={Register} />
     <Route path='/sidebar' exact component={Sidebar} />
     <Route path='/faq' exact component={FAQ} />
-<<<<<<< HEAD
-    <Route path='/readinglist' exact component={ReadingList} />
-=======
     <Route path='/myprofile' exact component={MyProfile}/>
->>>>>>> master
     
 
   </Switch>;
