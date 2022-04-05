@@ -1,19 +1,25 @@
-import Testapp from "../src/components/Testapp"
+import Testapp from "./components/Testapp"
 import AdminSidebar from '../src/components/AdminSidebar/AdminSidebar'
+import { BrowserRouter } from "react-router-dom";
+import AdminReadingList from "./components/AdminReadingList/AdminReadingList";
+
 
 
 
 
 function App() {
   return (
-    <div className="App">
+   
       
-      <AdminSidebar />
-      <Testapp />
+      <BrowserRouter >
+        <AdminSidebar />
+        <Testapp />
+        <AdminReadingList />
+      </BrowserRouter>
 
      
       
-    </div>
+   
   );
 }
 
