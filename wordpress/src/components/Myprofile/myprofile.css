@@ -1,0 +1,26 @@
+.profile-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  text-align: center;
+  padding: 50px;
+  margin-top: 7rem;
+  border-radius: 10px;
+  border: 1px solid grey;
+  width: 50rem;
+  height: 40rem;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  width: 8rem;
+  height: 8rem;
+  background-color: rgb(88, 86, 86);
+  margin-top: -100px;
+  border-radius: 100%;
+}
